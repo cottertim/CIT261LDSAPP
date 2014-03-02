@@ -1,0 +1,96 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+
+
+        <script>
+            function getBook(bookNumber){
+                var b = bookNumber;
+                if( b == 0){
+                    var ot = randomOldT();
+                    return ot;
+                }
+                else if ( b == 1 ){
+                    var nt = randomNewT();
+                    return nt;
+                }
+                else if ( b == 2 ){
+                    var bom = randomBOM();
+                    return bom;
+                    
+                }
+                else if ( b == 3 ){
+                    var dc = randomDC();
+                    return dc;
+                    
+                }
+                else if ( b == 4 ){
+                    var pogp = randomPOGP();
+                    return pogp;
+                    
+                }
+                else if ( b == 5 ){
+                    var gc = randomGC();
+                    return gc;
+                }
+                else {
+                    var random = randomScripture();
+                    return random;
+                }
+                
+                
+            }
+            function randomOldT()
+            {
+                var x= 0;
+                x = Math.floor((Math.random()*23145)+1);
+                return x;
+            }
+                function randomNewT()
+            {
+                var x= 0;
+                x = Math.floor((Math.random()*7957)+1);
+                return x;
+            }
+                function randomBOM()
+            {
+                var x= 0;
+                x = Math.floor((Math.random()*6604)+1);
+                return x;
+            }
+                function randomDC()
+            {
+                var x= 0;
+                x = Math.floor((Math.random()*3654)+1);
+                return x;
+            }
+                function randomPOGP()
+            {
+                var x= 0;
+                x = Math.floor((Math.random()*635)+1);
+                return x;
+            }
+                function randomGC()
+            {
+                var x= 0;
+                x = Math.floor((Math.random()*120)+1);
+                return x;
+            }
+                function randomScripture()
+            {
+                var x= 0;
+                x = Math.floor((Math.random()*42115)+1);
+                return x;
+            }
+            
+        </script>
+    </body>
+</html>
