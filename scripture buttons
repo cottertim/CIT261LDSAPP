@@ -1,0 +1,46 @@
+
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title></title>
+<script type="text/javascript">
+	
+
+        function check(input){
+        
+        var the = 1;
+        if (input == 1){ 
+	the = "The Lord told Jospeh, \"travel west, that my church...\"";
+	}
+	else if (input == 2){ 
+	the = "And Jesus saith unto them, be of good cheer";
+	}
+	else if (input == 3){ 
+	the = "I, Nephi, Being born of goodly parents";
+	}
+	else  { 
+	the = "no input selected";
+	}
+
+        var div = document.getElementById('chinny');
+	div.innerHTML = the;
+        
+        
+
+}
+</script>
+</head>
+
+<Body>
+
+
+<button type="button" onclick="check(1)">the "DC" button
+<button type="button" onclick="check(2)">the "TEST" button
+<button type="button" onclick="check(3)">the "BOM" button
+</button>
+<div id="chinny"></div>
+
+
+</body>
+</html>
