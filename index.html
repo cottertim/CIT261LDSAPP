@@ -18,6 +18,43 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/hover.css" media="all">
+    
+    
+    
+    
+                <!-- Installing Firebase from CDN -->
+    <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+    
+    <script type="text/javascript">
+    /* Recipe code to check if data exists in Firebase */
+    
+      function makeList(ref) {
+        
+      }
+       
+      function getFirstFromList(ref, cb) {
+        ref.startAt().limit(1).once("child_added", function(snapshot) {
+          cb(snapshot.val());
+        });
+      }
+       
+      // Running this should popup an alert with the scripture.
+      function go() {
+var random = Math.floor(Math.random() * (10 - 0 + 1)) + 0;
+        var testRef = new Firebase("https://radiant-fire-6624.firebaseio.com/BOM/" +random );
+        makeList(testRef);
+        getFirstFromList(testRef, function(val) {
+          
+       alert(val);
+        
+        });
+      }
+      
+    </script>
+    
+    
+    
+    
 
     <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -57,6 +94,24 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
+            
+            
+            
+            
+            <script>var worker = new Worker('doWork.js');
+
+worker.addEventListener('message', function(e) {
+  console.log('Worker said: ', e.data);
+}, false);
+
+worker.postMessage('Hello World'); // Send data to our worker.</script>
+            
+            
+            
+            
+            
+            
+            
             <form id="localdemo">
                 <br/>
                 <b>Name:</b>
@@ -95,6 +150,28 @@
                 document.getElementById("spanDate").innerHTML = months[tomorrow.getMonth()] + " " + tomorrow.getDate() + ", " + tomorrow.getFullYear();
             </script>
             <h1>
+                
+                
+                
+                
+                
+                
+                
+                
+      
+  
+  
+     <h1>Get the first item in a list in Firebase</h1>
+    <p><a href="#" onclick="go();">Click here</a> to get the first item</p>
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 <strong>2 Nephi 2:25</strong>
             </h1>
             <a href="http://www.lds.org/scriptures/bofm/2-ne/2.27?lang=eng" target="_blank">
