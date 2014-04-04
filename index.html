@@ -63,7 +63,7 @@
                 <input type="text" name="firstname">
             </form>
             <br/>
-            <button class="hover" onclick="storeData()">Save</button>
+            <button onclick="storeData()">Save</button>
             <br/>
             <p id="display">Stored name will appear here.</p>
             <script>
@@ -109,7 +109,11 @@
     </div>
     <div class="container">
         <!-- Example row of columns -->
-        <div class="row">
+        
+        <input class="spoilerbutton hover" type="button" value="▼" onclick="this.value=this.value=='▼'?'▲':'▼';">
+<div class="spoiler"><div>
+
+    <div class="row">
             <div class="col-md-4">
 
                 <p>
@@ -127,6 +131,10 @@
                 </p>
             </div>
         </div>
+    
+</div></div>
+        
+        
 
         <hr>
 
